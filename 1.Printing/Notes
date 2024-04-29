@@ -1,0 +1,22 @@
+Rust 
+
+- Assure la securite memoire 
+
+I. Printing
+Formatted print = pouvoir utiliser des specificateur de format tels que {}
+
+Les macros -> ont un ! 
+
+   // Different formatting can be invoked by specifying the format character
+    // after a `:`.
+    println!("Base 10:               {}",   69420); // 69420
+    println!("Base 2 (binary):       {:b}", 69420); 10000111100101100
+    println!("Base 8 (octal):        {:o}", 69420); // 207454
+    println!("Base 16 (hexadecimal): {:x}", 69420); // 10f2c
+
+Trait -> mechanisme qui permet de definir un comportement commun a un ensemble de types.
+Les traits sont similaires aux interfaces dans d'autres langages de programmation mais ils offrent plus de flexibilite et de fonctionnalites. 
+
+std::fmt : module standard qui fournit des fonctionnalites pour le formatage et l'affichage de donnees
+-> Display fmt::Display {variable}
+-> Debug fmt::Debug {variable:?}
