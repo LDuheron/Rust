@@ -1,3 +1,5 @@
+use std::fmt; // importing the fmt module
+
 
 fn main(){
 	println!("Hello world !");
@@ -12,4 +14,22 @@ fn main(){
     let number: f64 = 1.0;
     let width: usize = 5; 
     println!("{number:>width$}");
+
+	println!("{:#?}", number); // supposed to be a pretty print but I dont see the difference ?
+
+
+	// In order to be able to print a structure, we need to precise if it is
+	// either with fmt::Display or fmt::Debug with the attribute derive
+	// struct NeverPrintable(i32); 
+
+	// #[derive(Debug)]
+	// struct DebugPrintable(i32);
+
+	// #[derive(Debug)]
+	// struct DebugDouble(DebugPrintable);
+
+	// // #[derive(Display)]
+	// // struct DisplayPrintable(i32);
+
+	// println!("{:?} months in the year", DebugDouble(DebugPrintable(4)));
 }

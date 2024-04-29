@@ -20,3 +20,6 @@ Les traits sont similaires aux interfaces dans d'autres langages de programmatio
 std::fmt : module standard qui fournit des fonctionnalites pour le formatage et l'affichage de donnees
 -> Display fmt::Display {variable}
 -> Debug fmt::Debug {variable:?}
+
+
+En Rust, impl est un mot-clé utilisé pour implémenter des fonctionnalités pour un type particulier. Il est utilisé dans plusieurs contextes, mais son objectif principal est de définir des implémentations pour des traits, des méthodes ou des fonctions.
