@@ -1,0 +1,28 @@
+En Rust, une primitive fait référence à un type de données de base intégré dans le langage. 
+
+Les entiers sont par defauts des i32 et les floats sont par default des f64.
+Mais rust peut deduire automatiquement la e type dune variable en fonction du contexte, 
+de la facon dont on utilise la variable dans le code.
+
+
+Deux types de compounds types en Rust
+- Tuples
+- Array
+
+Tuple -> structure ordonnee d'elements de types differents
+
+let tuple_ex: (i32, &str, bool) = (42, "hello", true);
+let entier = tuple_ex.0; // 42 
+
+Mot clef mut => indique que la variable est mutable.
+Signifie qu'on peut reassigner une vnouvelle valeur a cette variable ulterieurement dans le code.
+sans le mot clef mut -> variable immuable. un peu comme le const en cpp.
+
+En rust, on peut inserer des underscores dans les nombres pour plus de lisibilite (1_000)
+
+Array / slice
+
+Slice -> array mais dont la longueur n'est pas connue par par le compilateur. Un slice est compose de deux elements -> pointeur sur data + learning
+slice: &[i32]
+-> slice[0] -> elements 0 de slice
+-> slice.len -> nb d'elements dans le slice

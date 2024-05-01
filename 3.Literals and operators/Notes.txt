@@ -1,0 +1,4 @@
+Custom types
+Deux custom types en rust :
+- struct
+- enum
